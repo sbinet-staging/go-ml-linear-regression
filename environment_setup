@@ -1,0 +1,21 @@
+#!/bin/bash
+# #####
+#
+# Install any software and setup environment for use in development.
+#
+#
+# #####
+
+set -e
+
+
+## Go
+
+### build
+
+go get -u github.com/kniren/gota/dataframe
+go get -u gonum.org/v1/plot
+go get -u gonum.org/v1/gonum
+go get -u github.com/sajari/regression
+
+echo "ml env setup complete"
